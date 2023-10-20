@@ -8,7 +8,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 st.set_page_config(page_title="Brain Tumor Prediction",page_icon="🧠",layout="wide")
 st.header("Predicting Brain Tumor Type and Severity with Convolutional Neural Networks")
 
-model = load_model('model.h5')
+model = load_model('modelbrain.h5')
 
 st.text("Please provide a brain MRI image for analysis.")
 uploaded_file = st.file_uploader("Choose an Image", type=['jpg', 'png', 'jpeg'])
