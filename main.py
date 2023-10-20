@@ -1,9 +1,8 @@
 import streamlit as st
-import numpy as np
-from tensorflow.keras.models import load_model  
+from keras.models import load_model  
 import os
 from PIL import Image,ImageOps 
-
+import numpy as np
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 st.set_page_config(page_title="Brain Tumor Prediction",page_icon="🧠",layout="wide")
@@ -43,3 +42,4 @@ if uploaded_file is not None:
     else:
         st.write("The person has been diagnosed with a brain tumor, specifically of the type pituitary")
 st.markdown("<p style='text-align: center; color: green; font-size: 14px; margin-top: 50px;'>DEVELOPED BY - BHAVYA SRI DUGGINA</p>", unsafe_allow_html=True)
+
